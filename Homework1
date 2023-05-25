@@ -1,0 +1,52 @@
+# Collaborative-activity-Mini-case-1---Linear-programming
+
+Equipo 2
+
+Lucero Jannete López García A01736938
+Daniela Piña Botello A01735524
+Félix      A017
+Diana Meneses Muñoz A017
+
+##Decision Support Analysis (Gpo 351)
+
+25/05/2023
+
+
+
+
+
+Link del caso: https://github.com/HesusG/python-decision-making-support-analysis/blob/main/module_1/Postwork1.md
+
+What are the two parameters that the LpProblem function implements?
+The LpProblem function contemplates 2 parameters, the first one is the name of the problem “The Whiskas Problem” which in programming is called a string being a datatype that’s mainly used to represent text. The second one is either LpMinimize or LpMaximize, depending on the Lp type of problem we are trying to solve which in this case is LpMinimize. Then the parameters would be seen as followed: 
+prob= LpProblem (“The Whiskas Problem”, LpMinimize)
+
+Is it mandatory to name the prob variable as prob?
+It is not mandatory to name the problem variable as prob, since a variable is just an identifying name that we assign to be able to save or retrieve a value, this can be texts, numbers or states as true or false. 
+
+What are LpContinuous and LpInteger used for?
+LpContinuous is used mainly in linear programming. It is a type of variable that can take on any real value within a specified range, In contrast, LpInteger is also used in linear programming but can only take integer values as its name says. For example: the x1 = LpVariable ('x1', cat = LpInteger)
+
+
+
+Explain and copy the section of code that defines the objective function.
+Explain and copy the section of code that defines the constraints.
+Is this a minimization or maximization problem?
+A minimization problem because we are using the parameter  LpMinimize 
+
+Run the WhiskasModel1.py code. (no need to make changes, just runt it as is) What is the value of the following variables? Status: BeefPercent = ChickenPercent = Total Cost of Ingredients per can =
+
+Whiskas 1
+
+
+
+
+OPTIONAL - (5/100 Extra Points for Final Test) Write all your answers as a markdown document (.md) and upload it to your github account.
+
+
+Executed programs: 
+Whiskas 1: 
+https://colab.research.google.com/drive/1Qidp037IU09MRZ5wgUDO536Qdwvv4vmy?usp=sharing
+
+Whiskas 2:
+https://colab.research.google.com/drive/1SbiOyetexUQV0kNlrLG7gnpDNyzOTyTf?usp=sharing
