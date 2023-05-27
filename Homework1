@@ -4,8 +4,9 @@ Equipo 2
 
 Lucero Jannete López García A01736938
 Daniela Piña Botello A01735524
-Félix      A017
-Diana Meneses Muñoz A017
+Félix Sánchez Gómez A01737356
+Diana Meneses Muñoz A01737237
+
 
 ##Decision Support Analysis (Gpo 351)
 
@@ -30,9 +31,26 @@ LpContinuous is used mainly in linear programming. It is a type of variable that
 
 
 -Explain and copy the section of code that defines the objective function.
+# The objective function is added to 'prob' first
+prob += 0.013 * x1 + 0.008 * x2, "Total Cost of Ingredients per can"
+There is a formula that is adding the price of both ingredients of the final product. It indicates the percentage that every ingredient of the can represents and when it's run you get the total cost for producing a can.
+
+
 -Explain and copy the section of code that defines the constraints.
+# The five constraints are entered
+prob += x1 + x2 == 100, "PercentagesSum"
+prob += 0.100 * x1 + 0.200 * x2 >= 8.0, "ProteinRequirement"
+prob += 0.080 * x1 + 0.100 * x2 >= 6.0, "FatRequirement"
+prob += 0.001 * x1 + 0.005 * x2 <= 2.0, "FibreRequirement"
+prob += 0.002 * x1 + 0.005 * x2 <= 0.4, "SaltRequirement"
+
+In this part of our code we can view the constraints that are applied, talking about nutritional contents required in percentage to obtain the cat food like the original recipe says.
+
+
+
 -Is this a minimization or maximization problem?
-A minimization problem because we are using the parameter  LpMinimize 
+A minimization problem because we are using the parameter  LpMinimize also because what we want is to know what ingredients must be dealt with to produce the number of cans of cat food; Another piece of information is to know the cost per can and thus know if our capacity is optimal to produce.
+
 
 -Run the WhiskasModel1.py code. (no need to make changes, just runt it as is) What is the value of the following variables? 
 Status: 
